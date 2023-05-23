@@ -1,0 +1,339 @@
+.nunito {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+a.chakra-link:focus {
+  box-shadow: none !important;
+}
+.admin a:hover {
+  color: #2bab55a6 !important ;
+}
+/* Login form styles */
+:focus {
+  outline: none !important;
+}
+
+:focus {
+  outline: none;
+}
+
+/* necessary to give position: relative to parent. */
+
+.effect-24 ~ .focus-bg:before,
+.effect-24 ~ .focus-bg:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background-color: #ededed;
+  transition: 0.3s;
+  z-index: 0;
+}
+.effect-24:focus ~ .focus-bg:before,
+.has-content.effect-24 ~ .focus-bg:before {
+  transition: 0.3s;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.effect-24 ~ .focus-bg:after {
+  left: auto;
+  right: 50%;
+  top: auto;
+  bottom: 50%;
+}
+.effect-24:focus ~ .focus-bg:after,
+.has-content.effect-24 ~ .focus-bg:after {
+  transition: 0.3s;
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+/* floating effect */
+.effect-24 ~ label {
+  position: absolute;
+  left: 16px;
+  width: 100%;
+  top: 10px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: 0;
+  letter-spacing: 0.5px;
+}
+
+.effect-24:focus ~ label,
+.effect-24:valid ~ label,
+.has-content.effect-24 ~ label {
+  top: -24px;
+  left: 1px;
+  font-size: 12px;
+  color: #333;
+  transition: 0.3s;
+  font-size: 16px;
+  /* z-index: 121; */
+}
+
+.effect-22,
+.effect-23,
+.effect-24 {
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  position: relative;
+  background: transparent;
+}
+
+/* necessary to give position: relative to parent. */
+input.effect-24,
+textarea.effect-24 {
+  font: 15px/24px 'Muli', sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  z-index: 1;
+  background: transparent !important;
+}
+input.effect-24,
+textarea.effect-24 {
+  font: 15px/24px 'Lato', Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+.col-3 {
+  width: 100%;
+  margin: 20px 0px;
+  position: relative;
+  padding: 0px;
+}
+.ct-grid {
+  stroke: rgb(255 255 255 / 20%) !important;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+  stroke: #ffffff !important;
+}
+.ct-label {
+  fill: rgb(255 255 255 / 40%);
+  color: rgb(255 255 255 / 81%) !important;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.ct-end {
+  transform: rotate(45deg);
+}
+.MuiListItemIcon-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiListItem-gutters {
+  padding-left: 3px !important;
+  padding-right: 16px;
+}
+
+.active .MuiListItem-button {
+  background: rgb(244, 234, 255);
+}
+.DropActive .MuiListItem-button {
+  background: rgb(227, 210, 255);
+}
+
+.active .MuiListItem-button::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 51px;
+  background-color: rgb(50, 11, 100);
+  transform: rotate(90deg);
+  left: -23px;
+  top: 22px;
+}
+.DropActive .MuiListItem-button::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 51px;
+  background-color: rgb(50, 11, 100);
+  transform: rotate(90deg);
+  right: -25px;
+  top: 22px;
+}
+.MuiTypography-body1 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+.MuiDrawer-root ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1b104ded;
+}
+.MuiDrawer-root ::-webkit-scrollbar-track {
+  background: #1e144900;
+}
+
+/* Handle */
+.MuiDrawer-root ::-webkit-scrollbar-thumb {
+  background: #3c0a6b98;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff98;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f5fa7;
+  border-radius: 12px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.product_img:focus {
+  background: blue;
+}
+
+.bill_of_material {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: unset;
+  margin: 0 !important;
+}
+.size {
+  background: rgb(179, 179, 179);
+  text-align: center;
+  padding: 10px 15px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.d_link:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgb(53, 174, 195),
+    rgb(147, 241, 255)
+  ) !important;
+}
+/* .d_link {
+  background: rgba(128, 128, 128, 0.651) !important;
+} */
+
+.activity_tab .makeStyles-tabWrapper-123 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.viewall:hover span.viewall_btn {
+  width: 75px !important;
+}
+
+.viewall:hover span.viewMap_btn {
+  width: 160px !important;
+}
+text {
+  font-family: 'Nunito' !important;
+}
+.collapsible_table:hover {
+  background: #ffffff7a;
+}
+.table_row:hover {
+  background: #f4eaff;
+}
+.transition {
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 700px) {
+  .message_header {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+}
+
+span.ct-label.ct-horizontal.ct-end {
+  width: 0px !important;
+  height: 5px !important;
+}
+
+.completed_task span.ct-label.ct-horizontal.ct-end {
+  width: 48px !important;
+  height: 32px !important;
+}
+.drop_menu .MuiCollapse-wrapperInner a {
+  display: inline-block;
+}
+.digital_studio .MuiTypography-root {
+  font-family: nunito;
+}
+
+.inputContent input:-webkit-autofill,
+.inputTextFld input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #331c41 inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.inputContent input:-webkit-autofill:focus,
+.inputTextFld input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #331c41 inset; /*your box-shadow*/
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+.MuiTypography-root {
+  font-family: nunito !important;
+}
+
+label#standard-basic-label {
+  color: white !important;
+}
+#standard-basic {
+  color: white !important;
+}
+.digital_studio #standard-basic {
+  color: gray !important;
+}
+.searchAndSort .MuiInput-underline:before {
+  border-bottom: 1px solid rgb(255 255 255 / 42%) !important;
+}
+
+.searchAndSort .MuiInput-underline:after {
+  border-bottom: 1px solid white !important;
+}
+.select_input .MuiInput-underline:before {
+  border-bottom: 1px solid rgb(210 210 210) !important;
+}
+.select_input .MuiInput-underline {
+  color: #b7acbc !important;
+  font-size: 14px;
+}
+
+.select_input .MuiNativeSelect-select.MuiNativeSelect-select:before:hover {
+  border-color: red !important;
+}
+
+.select_input .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid rgb(210 210 210) !important;
+}
+.select_input .MuiInput-underline:after {
+  border-bottom: 2px solid #9830b1 !important;
+}

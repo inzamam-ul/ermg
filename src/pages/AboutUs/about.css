@@ -1,0 +1,45 @@
+.about-top {
+  backdrop-filter: blur(15px);
+}
+.about-text {
+  border: 3px solid #3182ce !important;
+  backdrop-filter: blur(3px);
+}
+.about-logo {
+  height: 64px;
+  margin-top: -74px;
+  margin-bottom: 31px;
+  border-radius: 5px;
+  backdrop-filter: brightness(0.3);
+}
+svg.rsm-svg {
+  background: white;
+  border-radius: 5px;
+}
+
+img.team-img {
+  transform: translate(-10px, 6px);
+}
+
+.img-container {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(207, 199, 199);
+  position: absolute;
+  right: -35px;
+  top: -30px;
+}
+
+.team-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 9px 0px rgb(255 255 255 / 40%),
+    0 4px 6px -2px rgb(182 182 182 / 75%) !important;
+}
+svg.css-a2wsy3:hover {
+  color: #1b3666 !important;
+}

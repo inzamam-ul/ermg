@@ -1,0 +1,42 @@
+.imgContainer {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: #80808094;
+  opacity: 1;
+ 
+  
+}
+
+/* .imgContainer:hover + .imgContainer::before {
+  opacity: 1;
+
+} */
+.content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+.imgContainer:hover + .content {
+  opacity: 1;
+}
